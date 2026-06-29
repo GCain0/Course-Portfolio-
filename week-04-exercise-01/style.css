@@ -1,13 +1,16 @@
+/* Global box model */
 * {
     box-sizing: border-box;
 }
 
+/* Base layout */
 html,
 body {
     min-height: 100vh;
     margin: 0;
 }
 
+/* Page styling */
 body {
     font-family: "Times New Roman", serif;
     line-height: 2;
@@ -17,6 +20,7 @@ body {
     padding: 32px 0;
 }
 
+/* Main content container */
 main {
     max-width: 800px;
     width: 90%;
@@ -24,6 +28,7 @@ main {
     border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
+/* Main heading */
 h1 {
     font-weight: normal;
     font-size: 48px;
@@ -33,6 +38,7 @@ h1 {
     text-align: center;
 }
 
+/* Section heading */
 h2 {
     font-size: 24px;
     margin-top: 48px;
@@ -41,10 +47,12 @@ h2 {
     padding-bottom: 16px;
 }
 
+/* Paragraph spacing */
 p {
     margin-bottom: 16px;
 }
 
+/* Screenshot container */
 .screenshot-container {
     margin: 32px 0;
     padding: 16px;
@@ -52,6 +60,7 @@ p {
     text-align: center;
 }
 
+/* Screenshot image styling */
 .screenshot-container img {
     max-width: 100%;
     height: auto;

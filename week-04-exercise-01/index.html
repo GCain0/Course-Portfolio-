@@ -23,21 +23,49 @@
                 Example: If your screenshot is named "apple-dot-com-but-with-papyrus-font.png", change the line to:
                 src="./apple-dot-com-but-with-papyrus-font.png"
             -->
-            <img src="./your-screenshot-name-goes-here.png" alt="Screenshot of the webpage I vandalized" />
+            <img src="./youtube-devtools.png" alt="YouTube DevTools screenshot" />
         </div>
-        <h2>What I "Vandalized"</h2>
+        <h2>Dev Tools Vandalism on YouTube</h2>
         <p>
-            Describe the changes you made to the website using the browser's developer tools. Some potential questions
-            to consider:
-        <ul>
-            <li>What text did you edit?</li>
-            <li>What CSS properties did you modify?</li>
-            <li>What made your edits interesting or amusing?</li>
-            <li>Did you understand why some changes worked and some didn't?</li>
-            <li>Why did you choose the changes you did?</li>
-            <li>Were you able to understand how the HTML and CSS worked together to make the changes you made?</li>
-            <li>Do you think you have a better sense of how dev tools can be used while crafting your own webpages?</li>
-        </ul>
+            For this exercise, I used Chrome DevTools to “vandalize” the YouTube homepage. I opened the
+Elements panel and edited some of the main text on the page, including the site branding and
+section titles.
+       <ul>
+    <li>
+        <strong>What text did you edit?</strong><br>
+        I changed the “Home” label to “Garrett’s House of Chaos” and renamed one of the YouTube sections to “Endless Cat Videos Only.” These edits made the page look intentionally silly.
+    </li>
+
+    <li>
+        <strong>What CSS properties did you modify?</strong><br>
+        I modified the background color, increased the font size, added a glowing box-shadow, and experimented with borders inside the <code>ytd-app</code> element. These changes dramatically altered the look of the page.
+    </li>
+
+    <li>
+        <strong>What made your edits interesting or amusing?</strong><br>
+        The combination of goofy text and loud neon styling made YouTube look like a parody version of itself. Seeing a normally clean site suddenly covered in bright colors and exaggerated fonts was genuinely funny.
+    </li>
+
+    <li>
+        <strong>Did you understand why some changes worked and some didn't?</strong><br>
+        Yes. The changes that targeted visible elements worked immediately, while edits applied to deeper layout containers didn’t always show obvious results because YouTube uses nested components and CSS variables. Some styles needed <code>!important</code> to override defaults.
+    </li>
+
+    <li>
+        <strong>Why did you choose the changes you did?</strong><br>
+        I picked changes that were instantly noticeable and visually chaotic. I wanted the screenshot to clearly show both HTML and CSS edits, and I chose styles that would make the page look funny and obviously modified.
+    </li>
+
+    <li>
+        <strong>Were you able to understand how the HTML and CSS worked together to make the changes you made?</strong><br>
+        Yes. Editing the HTML changed the content, while the CSS controlled how that content looked. Seeing both update live helped me understand how structure and styling interact on a real webpage.
+    </li>
+
+    <li>
+        <strong>Do you think you have a better sense of how dev tools can be used while crafting your own webpages?</strong><br>
+        Definitely. This exercise made DevTools feel like a creative sandbox instead of something intimidating. Inspecting elements, testing styles, and seeing instant results will make debugging and experimenting in my own projects much easier.
+    </li>
+</ul>
         </p>
     </main>
 </body>
