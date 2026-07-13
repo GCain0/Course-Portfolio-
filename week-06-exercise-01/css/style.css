@@ -72,6 +72,10 @@ code {
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
+/* ------------------------------ */
+/* NAV SIMPLE (Vertical Sidebar)  */
+/* ------------------------------ */
+
 .nav-simple {
   position: fixed;
   left: 32px;
@@ -104,9 +108,13 @@ code {
   color: #ffffff;
 }
 
-.nav-simple+main {
+.nav-simple + main {
   margin-left: 232px;
 }
+
+/* -------------------------------- */
+/* NAV HORIZONTAL (Top Navigation)  */
+/* -------------------------------- */
 
 .nav-horizontal {
   position: fixed;
@@ -122,41 +130,4 @@ code {
 .nav-horizontal ul {
   list-style: none;
   margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 32px;
-}
-
-.nav-horizontal li {
-  margin-bottom: 0;
-}
-
-.nav-horizontal a {
-  display: block;
-  padding: 16px 0;
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.nav-horizontal a:hover {
-  color: #0066CC;
-}
-
-.nav-horizontal+main {
-  margin-top: 80px;
-}
-
-.nav-custom {}
-
-.nav-custom ul {}
-
-.nav-custom li {}
-
-.nav-custom a {}
-
-.nav-custom a:hover {}
-
-@media (width >=480px) {}
-
-@media (width >=1024px) {}
+  padding: 
