@@ -1,4 +1,4 @@
-/* Anime pastel palette */
+/* === Anime Pastel Theme Variables === */
 :root {
   --pink: #f9c5d5;
   --peach: #f7d1ba;
@@ -8,7 +8,7 @@
   --light: #fff;
 }
 
-/* Reset */
+/* === Reset === */
 * {
   margin: 0;
   padding: 0;
@@ -17,17 +17,18 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(180deg, var(--pink), var(--lavender));
+  background: linear-gradient(180deg, #f9c5d5 0%, #e8d7f9 100%);
   color: var(--dark);
   line-height: 1.6;
 }
 
-/* Header */
+/* === Header === */
 .site-header {
   background: var(--light);
   border-bottom: 2px solid var(--blue);
 }
 
+/* Navigation */
 .site-nav {
   max-width: 960px;
   margin: auto;
@@ -43,7 +44,14 @@ body {
   text-decoration: none;
 }
 
-/* Navigation */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+/* Nav links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -64,22 +72,54 @@ body {
   box-shadow: 0 0 10px var(--blue);
 }
 
-/* Hero */
-.anime-hero {
+.nav-links a[aria-current="page"] {
+  font-weight: 600;
+  border-bottom: 2px solid var(--lavender);
+}
+
+/* === Hero Section === */
+.hero {
+  padding: 2rem 0;
+  gap: 3rem;
   display: grid;
-  gap: 2rem;
   align-items: center;
-  margin-bottom: 3rem;
+}
+
+.hero-content .hero-tagline {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.hero-text {
+  margin-bottom: 1.5rem;
+}
+
+.hero-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image img {
-  max-width: 240px;
+  max-width: 180px;
   border-radius: 50%;
   border: 4px solid var(--light);
   box-shadow: 0 0 20px var(--blue);
 }
 
-/* Buttons */
+/* === Buttons === */
 .btn {
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
@@ -102,10 +142,24 @@ body {
   box-shadow: 0 0 15px var(--blue);
 }
 
-/* Cards */
+/* === Sections === */
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section-highlight {
+  background: var(--light);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+}
+
+/* === Cards === */
 .cards {
   display: grid;
   gap: 1rem;
+  max-width: 900px;
+  margin: auto;
 }
 
 .card {
@@ -116,7 +170,7 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-/* Projects */
+/* === Projects Grid === */
 .projects-grid {
   display: grid;
   gap: 1.5rem;
@@ -129,17 +183,53 @@ body {
   border: 2px solid var(--lavender);
 }
 
-/* Contact Form */
+.project-meta {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* === Contact Form === */
 .contact-form {
   background: var(--light);
   padding: 1.5rem;
   border-radius: 12px;
   border: 2px solid var(--pink);
+  max-width: 480px;
+  margin: auto;
 }
 
-/* Responsive */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font: inherit;
+}
+
+/* === Footer === */
+.site-footer {
+  margin-top: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+  background: var(--light);
+  border-top: 2px solid var(--blue);
+}
+
+/* === Responsive Breakpoints === */
 @media (min-width: 640px) {
-  .anime-hero {
+  .hero {
     grid-template-columns: 2fr 1fr;
   }
 
@@ -149,5 +239,15 @@ body {
 
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
   }
 }
